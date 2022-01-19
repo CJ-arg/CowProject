@@ -8,7 +8,6 @@ const info = () => (
   <CustomTooltip
     title={(
       <ul>
-        {' '}
         Contacto:
 
         <li><Link href="https://www.linkedin.com/in/carlos-janon-developer/">Linkedin</Link></li>

@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 import { FormControlLabel, Switch } from '@material-ui/core';
-
 import React, { useState } from 'react';
 import './app.css';
 import Info from './components/Info';
@@ -11,6 +10,7 @@ import SvgImage from './components/SvgImage';
 function App() {
   const [latam, setLatam] = useState(false);
   return (
+
     <div className="container">
       <h1 className="cowTitle"> Hover The Cow </h1>
 

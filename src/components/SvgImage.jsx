@@ -35,7 +35,6 @@ const SvgImage = (props) => (
     viewBox="0 0 381.763 237.639"
     {...props}
   >
-    {' '}
     <Contorno latamMode={props.latamMode} />
     <Cuernos />
     <Pecho latamMode={props.latamMode} />
