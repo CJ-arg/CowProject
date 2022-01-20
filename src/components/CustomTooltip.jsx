@@ -6,14 +6,13 @@ const CustomTooltip = withStyles(() => ({
     background: '#ffffff',
     color: 'black',
     fontSize: 13,
-    border: '2px  solid #e6e1e1',
+    border: '1px  solid #e6e1e1',
     borderRadius: 5,
     padding: '4',
     paddingLeft: 'none',
     marginLeft: 0,
     paddingRight: 40,
-    height: 'auto',
-    overflow: 'auto',
+
   },
   arrow: {
     color: 'black',

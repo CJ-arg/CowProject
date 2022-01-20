@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import { FormControlLabel, Switch } from '@material-ui/core';
+import { FormControlLabel, Grid, Switch } from '@material-ui/core';
 import React, { useState } from 'react';
 import './app.css';
 import Info from './components/Info';
@@ -12,7 +12,7 @@ function App() {
   return (
 
     <div className="container">
-      <h1 className="cowTitle"> Hover The Cow </h1>
+      <p className="cowTitle"> Hover The Cow </p>
 
       <div className="cowDiv">
         <SvgImage
@@ -22,15 +22,14 @@ function App() {
           fill="#3c1414"
         />
       </div>
+      <Grid container spacing={4}>
+        <Grid item xs={1}>
 
-      <div className="Nav">
-        <div className="leftSide">
-          <Info />
-          {' '}
-        </div>
+        </Grid>
+        <Grid item xs={4}>  <Info />
 
-        <div className="containerLatam">
-          {' '}
+        </Grid>
+        <Grid item xs={3}>
           <FormControlLabel
             control={(
               <Switch
@@ -43,10 +42,10 @@ function App() {
             labelPlacement="start"
             label={<p className="latamMode">Modo Latam</p>}
           />
-        </div>
-
-      </div>
-
+        </Grid>
+        <Grid item xs={3}>
+        </Grid>
+      </Grid>
     </div>
   );
 }

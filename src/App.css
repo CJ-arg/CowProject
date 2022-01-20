@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@700&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marvel:wght@700&family=Righteous&display=swap");
 
 .container {
   display: block;
@@ -7,27 +7,27 @@
   text-align: center;
 }
 .cowTitle {
- margin-top: 2%;
-  font-family: 'Righteous', cursive;
+  margin-top: 2%;
+  font-family: "Righteous", cursive;
   color: rgb(255, 16, 16);
-  font-size: 50px;
+  font-size: 6rem;
   margin-bottom: -25px;
   letter-spacing: 5px;
 }
 .cowDiv {
-  margin-top: 0;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: brown;
- margin-bottom: -25px;
+  margin-bottom: -25px;
 }
 .Nav .leftSide {
   flex: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-margin-right: 30%;
+  margin-right: 0%;
 }
 .Nav {
   background-color: none;
@@ -35,8 +35,8 @@ margin-right: 30%;
   height: 50px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
+  padding: 0, 20% 0, 20%;
 }
- 
 
 .containerLatam {
   width: 50%;
@@ -45,13 +45,47 @@ margin-right: 30%;
   justify-content: flex-start;
   height: auto;
   text-align: center;
-
 }
-.latamMode{
-font-family: 'Righteous', cursive;
+.latamMode {
+  font-family: "Righteous", cursive;
   color: rgb(255, 16, 16);
   font-size: 15px;
   margin-left: 10px;
   letter-spacing: 2px;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    min-height: 288px;
+    padding: 32px;
+  }
 
+  .cowTitle {
+    padding: 28px;
+    font-size: 60pt;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 32px;
+  }
+  .cowTitle {
+    font-size: 50pt;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 32px;
+  }
+  .cowTitle {
+    font-size: 45pt;
+  }
+}
+@media screen and (max-width: 668px) {
+  .container {
+    padding: 5%;
+  }
+  .cowTitle {
+    font-size: 35pt;
+  }
 }
