@@ -66,7 +66,7 @@ const Aguja = ({ latamMode }) => {
           },
         }}
         onClose={handleTooltipClose}
-        {...isMobile ? (`open=${true}`) : null}     //bacer una logica para que depende la pantalla esto cambie
+        {...isMobile ? (`open=${open}`) : null}     //bacer una logica para que depende la pantalla esto cambie
         disableFocusListener
         // disableHoverListener
         disableTouchListener
