@@ -3,16 +3,17 @@
 .container {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 100vh;
   text-align: center;
 }
 .cowTitle {
-  margin-top: 2%;
+  margin-top: 1%;
   font-family: "Righteous", cursive;
   color: rgb(255, 16, 16);
   font-size: 6rem;
   margin-bottom: -25px;
   letter-spacing: 5px;
+  -webkit-text-stroke: 0.7px rgb(0, 0, 0);
 }
 .cowDiv {
   margin-top: 10px;
@@ -49,7 +50,7 @@
 .latamMode {
   font-family: "Righteous", cursive;
   color: rgb(255, 16, 16);
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 10px;
   letter-spacing: 2px;
 }
@@ -87,5 +88,10 @@
   }
   .cowTitle {
     font-size: 35pt;
+  }
+  .latamMode {
+    font-family: "Righteous", cursive;
+    color: rgb(255, 16, 16);
+    font-size: 13px;
   }
 }
