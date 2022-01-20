@@ -3,20 +3,19 @@ import { withStyles } from '@material-ui/core/styles';
 
 const CustomTooltip = withStyles(() => ({
   tooltip: {
-    background: '#ffffff',
+    background: '#fafffa',
     color: 'black',
-    fontSize: 15,
+    fontSize: '1rem',
     border: '1px  solid #e6e1e1',
-    borderRadius: 5,
-    padding: '4',
-    paddingLeft: 'none',
+    borderRadius: '0.3rem',
+    padding: '1px',
     marginLeft: 0,
     paddingRight: 40,
 
   },
   arrow: {
     color: 'black',
-    fontSize: 16,
+    fontSize: 20,
   },
 }))(Tooltip);
 
