@@ -36,7 +36,7 @@ const Contorno = () => {
         interactive
         TransitionProps={{ timeout: 600 }}
         arrow
-        placement="left"
+        placement="top-end"
         PopperProps={{
           modifiers: {
             offset: {
