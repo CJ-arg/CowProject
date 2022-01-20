@@ -1,10 +1,11 @@
 import ClickAwayListener from '@material-ui/core/ClickAwayListener/ClickAwayListener';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Zoom } from '@material-ui/core';
 import CustomTooltip from './CustomTooltip';
 
 const Aguja = ({ latamMode }) => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false)
 
   const handleTooltipClose = () => {
     setOpen(false);
@@ -13,6 +14,16 @@ const Aguja = ({ latamMode }) => {
   const handleTooltipOpen = () => {
     setOpen(true);
   };
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+  }, [])
   const agujaText = ['🇦🇷: Aguja.',
     '🇧🇷: Acém.',
     '🇪🇸: Morrillo.',
@@ -55,7 +66,7 @@ const Aguja = ({ latamMode }) => {
           },
         }}
         onClose={handleTooltipClose}
-        open={open} //bacer una logica para que depende la pantalla esto cambie
+        {...isMobile ? (`open=${open}`) : null}     //bacer una logica para que depende la pantalla esto cambie
         disableFocusListener
         // disableHoverListener
         disableTouchListener
@@ -67,7 +78,7 @@ const Aguja = ({ latamMode }) => {
           />
         </g>
       </CustomTooltip>
-    </ClickAwayListener>
+    </ClickAwayListener >
   );
 };
 
