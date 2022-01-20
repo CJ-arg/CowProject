@@ -37,6 +37,7 @@ const Asado = ({ latamMode }) => {
       interactive
       TransitionProps={{ timeout: 600 }}
       arrow
+      disableFocusListener
       placement="top-end"
     >
       <g>
