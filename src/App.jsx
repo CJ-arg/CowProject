@@ -12,7 +12,7 @@ function App() {
   return (
 
     <div className="container">
-      <p className="cowTitle"> Hover The Cow </p>
+      <p className="cowTitle"> Click The Cow </p>
 
       <div className="cowDiv">
         <SvgImage
