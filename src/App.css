@@ -10,10 +10,11 @@
   margin-top: 1%;
   font-family: "Righteous", cursive;
   color: rgb(255, 16, 16);
-  font-size: 6rem;
+  font-size: 6.5rem;
   margin-bottom: -25px;
+  font-weight: 900;
   letter-spacing: 5px;
-  -webkit-text-stroke: 0.7px rgb(0, 0, 0);
+  -webkit-text-stroke: 0.1px rgb(160, 43, 43);
 }
 .cowDiv {
   margin-top: 10px;
@@ -62,7 +63,7 @@
 
   .cowTitle {
     padding: 28px;
-    font-size: 60pt;
+    font-size: 6.5rem;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -70,7 +71,7 @@
     padding: 32px;
   }
   .cowTitle {
-    font-size: 50pt;
+    font-size: 6rem;
   }
 }
 
@@ -79,7 +80,7 @@
     padding: 32px;
   }
   .cowTitle {
-    font-size: 45pt;
+    font-size: 4rem;
   }
 }
 @media screen and (max-width: 668px) {
@@ -87,11 +88,14 @@
     padding: 5%;
   }
   .cowTitle {
-    font-size: 35pt;
+    font-size: 3rem;
+    margin-bottom: -65px;
+    margin-top: 0;
   }
   .latamMode {
     font-family: "Righteous", cursive;
     color: rgb(255, 16, 16);
     font-size: 13px;
+    margin-top: 0;
   }
 }
