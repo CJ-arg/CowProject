@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/destructuring-assignment */
 import React from "react";
+import { cowSections } from "../cow.constants";
 import Aguja from "./Aguja";
 import Asado from "./Asado";
 import BifeAncho from "./BifeAncho";
@@ -9,8 +10,8 @@ import BifeAngosto from "./BifeAngosto";
 // import Cabeza from "./Cabeza";
 import ColitaDeCuadril from "./ColitaDeCuadril";
 import Contorno from "./Contorno";
-import Costillar from "./Costillar";
-// import CowSection from "./CowSection";
+// import Costillar from "./Costillar";
+import CowSection from "./CowSection";
 import Cuadrada from "./Cuadrada";
 import Cuadril from "./Cuadril";
 import Cuello from "./Cuello";
@@ -29,15 +30,29 @@ import Tortuguita from "./Tortuguita";
 import Vacio from "./Vacio";
 
 function SvgImage(props) {
+  const [open, setOpen] = React.useState(false);
+
+  const handleTooltipClose = () => {
+    setOpen(false);
+  };
+
+  const handleTooltipOpen = () => {
+    setOpen(true);
+  };
+
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={599.993} height={373.481} viewBox="0 0 381.763 237.639" {...props}>
       <Contorno latamMode={props.latamMode} />
       <Cuernos />
       <Pecho latamMode={props.latamMode} />
       <Cuello latamMode={props.latamMode} />
-      <Costillar latamMode={props.latamMode} />
+      {/* <Costillar latamMode={props.latamMode} /> */}
       {/* <Cabeza latamMode={props.latamMode} /> */}
-      {/* <CowSection /> */}
+      {cowSections.map((Section) => (
+        <CowSection key={Section.sectionId} open={open} handleTooltipClose={handleTooltipClose}>
+          <Section.SvgComponent handleTooltipClose={handleTooltipClose} handleTooltipOpen={handleTooltipOpen} />
+        </CowSection>
+      ))}
       <Aguja latamMode={props.latamMode} />
       <Paleta latamMode={props.latamMode} />
       <Cuadril latamMode={props.latamMode} />
