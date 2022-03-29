@@ -32,7 +32,7 @@ function App() {
               />
             }
             labelPlacement="start"
-            label={<p className="latamMode">Modo Latam</p>}
+            label={<p className="latamMode">Latam Focus</p>}
           />
         </Grid>
         <Grid item xs={3} />

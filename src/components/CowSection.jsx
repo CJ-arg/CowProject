@@ -2,14 +2,14 @@
 import React from "react";
 import CustomTooltip from "./CustomTooltip";
 
-export default function CowSection({ children, open, handleTooltipClose }) {
+export default function CowSection({ children, open, handleTooltipClose, Zoom }) {
   return (
     // <ClickAwayListener onClickAway={handleTooltipClose}>
     <CustomTooltip
       // title={
       //   <ul>{latamMode ? cabezaTextLatam.map((str) => <p>{str} </p>) : cabezaText.map((str) => <p>{str} </p>)}</ul>
       // }
-      // TransitionComponent={Zoom}
+      TransitionComponent={Zoom}
       interactive
       TransitionProps={{ timeout: 600 }}
       arrow

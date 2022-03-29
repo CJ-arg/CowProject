@@ -19,17 +19,16 @@ function Contorno() {
       <CustomTooltip
         title={
           <ul>
-            {" "}
             {contornoText.map((str) => (
               <p>{str} </p>
-            ))}{" "}
+            ))}
           </ul>
         }
         TransitionComponent={Zoom}
         interactive
         TransitionProps={{ timeout: 600 }}
         arrow
-        placement="LEFT"
+        placement="left"
         PopperProps={{
           modifiers: {
             offset: {
