@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/destructuring-assignment */
 import React from "react";
-import { Zoom } from "@material-ui/core";
+import { ClickAwayListener, Zoom } from "@material-ui/core";
 import { cowSections } from "../cow.constants";
 
 // import Aguja from "./Aguja";
@@ -28,18 +28,19 @@ import Patas from "./Patas";
 // import Peceto from "./Peceto";
 // import Pecho from "./Pecho";
 import "./svgImage.css";
+import CustomTooltip from "./CustomTooltip";
 // import Tortuguita from "./Tortuguita";
 // import Vacio from "./Vacio";
 
 function SvgImage(props) {
-  const [open, setOpen] = React.useState(false);
+  const [openSection, setOpenSection] = React.useState(null);
 
   const handleTooltipClose = () => {
-    setOpen(false);
+    setOpenSection(null);
   };
 
-  const handleTooltipOpen = () => {
-    setOpen(true);
+  const handleTooltipOpen = (sectionId) => {
+    setOpenSection(sectionId);
   };
 
   return (
@@ -57,9 +58,33 @@ function SvgImage(props) {
       {/* <ColitaDeCuadril latamMode={props.latamMode} /> */}
       {/* <Cuadrada latamMode={props.latamMode} /> */}
       {cowSections.map((Section) => (
-        <CowSection key={Section.sectionId} open={open} Zoom={Zoom} handleTooltipClose={handleTooltipClose}>
-          <Section.SvgComponent handleTooltipClose={handleTooltipClose} handleTooltipOpen={handleTooltipOpen} />
-        </CowSection>
+        <ClickAwayListener onClickAway={handleTooltipClose} mouseEvent="onMouseUp">
+          <CustomTooltip
+            title={<ul>{Section.getSectionName(props.latamMode)}</ul>}
+            TransitionComponent={Zoom}
+            interactive
+            TransitionProps={{ timeout: 600 }}
+            arrow
+            placement="top-end"
+            PopperProps={{
+              modifiers: {
+                offset: {
+                  enabled: true,
+                  offset: "-100px, 3px",
+                },
+              },
+            }}
+            open={openSection === Section.sectionId}
+            onClose={handleTooltipClose}
+            disableFocusListener
+            disableHoverListener
+            disableTouchListener
+          >
+            <g onClick={() => handleTooltipOpen(Section.sectionId)}>
+              <Section.SvgComponent handleTooltipClose={handleTooltipClose} handleTooltipOpen={handleTooltipOpen} />
+            </g>
+          </CustomTooltip>
+        </ClickAwayListener>
       ))}
       {/* <Paleta latamMode={props.latamMode} /> */}
       {/* <Cuadril latamMode={props.latamMode} /> */}
