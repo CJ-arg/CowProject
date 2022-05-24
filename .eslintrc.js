@@ -9,8 +9,15 @@ module.exports = {
       {
         endOfLine: "auto",
       },
+      {
+        trailingComma: "es5",
+        semi: false,
+        singleQuote: false,
+        printWidth: 120,
+      },
     ],
     "react/prop-types": OFF,
     "react/jsx-props-no-spreading": OFF,
+    plugins: ["@typescript-eslint", "prettier"],
   },
 };
