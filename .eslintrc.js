@@ -18,6 +18,5 @@ module.exports = {
     ],
     "react/prop-types": OFF,
     "react/jsx-props-no-spreading": OFF,
-    plugins: ["0 = off", "prettier"],
   },
 };
