@@ -3,7 +3,7 @@
 /* eslint-disable react/destructuring-assignment */
 import React from "react";
 import { ClickAwayListener, Zoom } from "@material-ui/core";
-import { cowSections } from "../cow.constants";
+
 
 // import Aguja from "./Aguja";
 // import Asado from "./Asado";
@@ -28,6 +28,7 @@ import Cuernos from "./Cuernos";
 // import Pecho from "./Pecho";
 import "./svgImage.css";
 import CustomTooltip from "./CustomTooltip";
+import { cowSections } from "../cow.constants";
 // import Tortuguita from "./Tortuguita";
 // import Vacio from "./Vacio";
 
