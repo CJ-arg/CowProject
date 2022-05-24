@@ -8,13 +8,11 @@ export const cowSections = [
   {
     sectionId: "Contorno",
     getSectionName: (latamMode) =>
-      latamMode
-        ? ["🇨🇱: Cuero.", "🇨🇴: Cuero.", "🇪🇨: Cuero.", "🇲🇽: Cuero.", "🇵🇪: Cuero.", "🇺🇾: Cuero.", "🇻🇪: Cuero."].map(
-            (str) => <p key={str}>{str} </p>
-          )
-        : ["🇦🇷: Cuero.", "🇧🇷: Couro.", "🇪🇸: Cuero.", " 🇫🇷: Cuir.", "🇺🇸: Leather."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+      latamMode ? (
+        <p> El cuero de vaca ha sido utilizado desde tiempos ancestrales para vestir a las personas.</p>
+      ) : (
+        <p> Cow leather has been used since ancient times to dress people.</p>
+      ),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -30,17 +28,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Huachalomo.",
-            "🇨🇴: Lomo de Aguja.",
-            "🇪🇨: Lomo de Aguja.",
-            "🇲🇽: Tapa de Lomo.",
-            "🇵🇪: Asado de Aguja.",
-            "🇺🇾: Aguja.",
-            "🇻🇪: Solomo abierto.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Huachalomo.",
+          "🇨🇴: Lomo de Aguja.",
+          "🇪🇨: Lomo de Aguja.",
+          "🇲🇽: Tapa de Lomo.",
+          "🇵🇪: Asado de Aguja.",
+          "🇺🇾: Aguja.",
+          "🇻🇪: Solomo abierto.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Aguja.", "🇧🇷: Acém.", "🇪🇸: Morrillo.", " 🇫🇷: Basses côtes.", "🇺🇸: Chuck."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -56,14 +54,14 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Asado de Tira.",
-            "🇨🇴: Asado de Tira.",
-            "🇪🇨: Costilla.",
-            "🇲🇽: Costilla.",
-            "🇵🇪: Costilla.",
-            "🇺🇾: Asado.",
-            "🇻🇪:Costillas.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Asado de Tira.",
+          "🇨🇴: Asado de Tira.",
+          "🇪🇨: Costilla.",
+          "🇲🇽: Costilla.",
+          "🇵🇪: Costilla.",
+          "🇺🇾: Asado.",
+          "🇻🇪:Costillas.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Asado.", "🇧🇷: Aba.", "🇪🇸: Falda.", "🇫🇷: Bavette.", "🇺🇸: Rib."].map((str) => <p key={str}>{str} </p>),
     SvgComponent: (pathProps) => (
       <g>
@@ -80,17 +78,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Lomo Liso.",
-            "🇨🇴: Lomo Ancho.",
-            "🇪🇨: Lomo de Falda.",
-            "🇲🇽: Lomo.",
-            "🇵🇪: Churrasco largo redondo.",
-            "🇺🇾: Espinazo con Lomo.",
-            "🇻🇪: Solomo de Cuerito.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Lomo Liso.",
+          "🇨🇴: Lomo Ancho.",
+          "🇪🇨: Lomo de Falda.",
+          "🇲🇽: Lomo.",
+          "🇵🇪: Churrasco largo redondo.",
+          "🇺🇾: Espinazo con Lomo.",
+          "🇻🇪: Solomo de Cuerito.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Bife Ancho.", "🇧🇷: Capa de filé.", "🇪🇸: Lomo ALto.", " 🇫🇷: Côtes, Entrecôtes.", "🇺🇸: Fore Rib."].map(
-            (str) => <p key={str}>{str} </p>
-          ),
+          (str) => <p key={str}>{str} </p>
+        ),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -106,17 +104,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Lomo Veteado.",
-            "🇨🇴: Lomo Ancho.",
-            "🇪🇨: Lomo de Asado.",
-            "🇲🇽: Lomo.",
-            "🇵🇪: Churrasco largo redondo.",
-            "🇺🇾: Espinazo sin Lomo.",
-            "🇻🇪: Solomo de Cuerito.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Lomo Veteado.",
+          "🇨🇴: Lomo Ancho.",
+          "🇪🇨: Lomo de Asado.",
+          "🇲🇽: Lomo.",
+          "🇵🇪: Churrasco largo redondo.",
+          "🇺🇾: Espinazo sin Lomo.",
+          "🇻🇪: Solomo de Cuerito.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Bife Angosto.", "🇧🇷: Filé de costela.", "🇪🇸: Lomo Bajo.", "🇫🇷: Faux Filet.", "🇺🇸: Strip Loin."].map(
-            (str) => <p key={str}>{str} </p>
-          ),
+          (str) => <p key={str}>{str} </p>
+        ),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -142,11 +140,11 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? ["🇨🇱: Sesos.", "🇨🇴: Sesos de Res.", "🇪🇨: Sesos.", "🇲🇽: Sesos.", "🇵🇪: Sesos.", "🇺🇾: Sesos.", "🇻🇪: Sesos."].map(
-            (str) => <p key={str}>{str} </p>
-          )
+          (str) => <p key={str}>{str} </p>
+        )
         : ["🇦🇷: Sesos.", "🇧🇷: Miolos.", "🇪🇸: Sesos.", " 🇫🇷: Cervelle.", "🇺🇸: Brain."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -162,21 +160,21 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Punta de picana.",
-            "🇨🇴: Colita de Cadera.",
-            "🇪🇨: Pajarilla.",
-            "🇲🇽: Empuje.",
-            "🇵🇪: Bistec de Cadera .",
-            "🇺🇾: Cuadril.",
-            "🇻🇪: Punta de trasero.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Punta de picana.",
+          "🇨🇴: Colita de Cadera.",
+          "🇪🇨: Pajarilla.",
+          "🇲🇽: Empuje.",
+          "🇵🇪: Bistec de Cadera .",
+          "🇺🇾: Cuadril.",
+          "🇻🇪: Punta de trasero.",
+        ].map((str) => <p key={str}>{str} </p>)
         : [
-            "🇦🇷: Colita De Cuadril.",
-            "🇧🇷: Maminha de Alcatra.",
-            "🇪🇸: Rabillo de Cadera.",
-            "🇫🇷: Bavette d' Aloyau.",
-            "🇺🇸: Tri Tip.",
-          ].map((str) => <p key={str}>{str} </p>),
+          "🇦🇷: Colita De Cuadril.",
+          "🇧🇷: Maminha de Alcatra.",
+          "🇪🇸: Rabillo de Cadera.",
+          "🇫🇷: Bavette d' Aloyau.",
+          "🇺🇸: Tri Tip.",
+        ].map((str) => <p key={str}>{str} </p>),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -192,17 +190,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Costillar.",
-            "🇨🇴: Costilla.",
-            "🇪🇨: Costilla.",
-            "🇲🇽: Costilla Cargada.",
-            "🇵🇪: Sancochado de Costillar.",
-            "🇺🇾: Falda.",
-            "🇻🇪: Costillas.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Costillar.",
+          "🇨🇴: Costilla.",
+          "🇪🇨: Costilla.",
+          "🇲🇽: Costilla Cargada.",
+          "🇵🇪: Sancochado de Costillar.",
+          "🇺🇾: Falda.",
+          "🇻🇪: Costillas.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Costillar.", "🇧🇷: Ponta de agulha.", "🇪🇸: Costillar.", " 🇫🇷: Plat de côtes.", "🇺🇸: Short Plate."].map(
-            (str) => <p key={str}>{str} </p>
-          ),
+          (str) => <p key={str}>{str} </p>
+        ),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -218,17 +216,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Ganso.",
-            "🇨🇴: Bota.",
-            "🇪🇨: Pulpa Blanca.",
-            "🇲🇽: Contra Cara.",
-            "🇵🇪: Asado de Pierna .",
-            "🇺🇾: Pulpa Cadera.",
-            "🇻🇪: Muchacho Cuadrado.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Ganso.",
+          "🇨🇴: Bota.",
+          "🇪🇨: Pulpa Blanca.",
+          "🇲🇽: Contra Cara.",
+          "🇵🇪: Asado de Pierna .",
+          "🇺🇾: Pulpa Cadera.",
+          "🇻🇪: Muchacho Cuadrado.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Cuadrada.", "🇧🇷: Alcatra.", "🇪🇸: Contra.", " 🇫🇷: Tranche Ronde.", "🇺🇸: Top Sirloin."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -244,17 +242,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Asiento de Picana.",
-            "🇨🇴: Punta de Anca.",
-            "🇪🇨: Punta de Cadera.",
-            "🇲🇽: Aguayón.",
-            "🇵🇪: Asado de Cadera.",
-            "🇺🇾: Cuadril con Hueso.",
-            "🇻🇪: Rabillo de Cadera.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Asiento de Picana.",
+          "🇨🇴: Punta de Anca.",
+          "🇪🇨: Punta de Cadera.",
+          "🇲🇽: Aguayón.",
+          "🇵🇪: Asado de Cadera.",
+          "🇺🇾: Cuadril con Hueso.",
+          "🇻🇪: Rabillo de Cadera.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Cuadril.", "🇧🇷: Alcatra.", "🇪🇸: Cadera sin Babilla.", "🇫🇷: Rumstek.", "🇺🇸: Rump."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -270,17 +268,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Cogote.",
-            "🇨🇴: Cogote.",
-            "🇪🇨: Nuca.",
-            "🇲🇽: Pescuezo.",
-            "🇵🇪: Pescueso.",
-            "🇺🇾: Cogote.",
-            "🇻🇪: Pescuezo.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Cogote.",
+          "🇨🇴: Cogote.",
+          "🇪🇨: Nuca.",
+          "🇲🇽: Pescuezo.",
+          "🇵🇪: Pescueso.",
+          "🇺🇾: Cogote.",
+          "🇻🇪: Pescuezo.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Cogote.", "🇧🇷: Pescoço.", "🇪🇸: Pescuezo.", " 🇫🇷: Collier.", "🇺🇸: Neck and Sticking."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -296,17 +294,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Bola.",
-            "🇨🇴: Lagarto de Pierna.",
-            "🇪🇨: Lagarto.",
-            "🇲🇽: Chambarrete.",
-            "🇵🇪: Osobuco Posterior.",
-            "🇺🇾: Garrón con Hueso.",
-            "🇻🇪: Lagarto con Hueso.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Bola.",
+          "🇨🇴: Lagarto de Pierna.",
+          "🇪🇨: Lagarto.",
+          "🇲🇽: Chambarrete.",
+          "🇵🇪: Osobuco Posterior.",
+          "🇺🇾: Garrón con Hueso.",
+          "🇻🇪: Lagarto con Hueso.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Garrón.", "🇧🇷: Músculo.", "🇪🇸: Morcillo.", " 🇫🇷: Gîte.", "🇺🇸: Shank."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -322,17 +320,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Filete.",
-            "🇨🇴: Lomo Fino.",
-            "🇪🇨: Lomo Fino.",
-            "🇲🇽: Fileta.",
-            "🇵🇪: Lomo.",
-            "🇺🇾: Lomo.",
-            "🇻🇪: Lomito.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Filete.",
+          "🇨🇴: Lomo Fino.",
+          "🇪🇨: Lomo Fino.",
+          "🇲🇽: Fileta.",
+          "🇵🇪: Lomo.",
+          "🇺🇾: Lomo.",
+          "🇻🇪: Lomito.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Lomo.", "🇧🇷: Filé Mignon.", "🇪🇸: Solomillo.", " 🇫🇷: Fillet.", "🇺🇸: Tenderloin."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -348,17 +346,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Malaya.",
-            "🇨🇴: Sobre Barriga.",
-            "🇪🇨: Falda Dorada.",
-            "🇲🇽: Fresada.",
-            "🇵🇪: Malaya.",
-            "🇺🇾: Matambre.",
-            "🇻🇪: Pollo de Res.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Malaya.",
+          "🇨🇴: Sobre Barriga.",
+          "🇪🇨: Falda Dorada.",
+          "🇲🇽: Fresada.",
+          "🇵🇪: Malaya.",
+          "🇺🇾: Matambre.",
+          "🇻🇪: Pollo de Res.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Matambre.", "🇧🇷: Matambre.", "🇪🇸: Aleta.", " 🇫🇷: (Pas de Nom).", "🇺🇸: Rose Meat."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -374,17 +372,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Posta Negra.",
-            "🇨🇴: Centro de pierna.",
-            "🇪🇨: Pulpa Negra.",
-            "🇲🇽:  Bistec de Pulpa Negra.",
-            "🇵🇪: Tapa.",
-            "🇺🇾: Pulpa de Nalga.",
-            "🇻🇪: Pulpa Negra.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Posta Negra.",
+          "🇨🇴: Centro de pierna.",
+          "🇪🇨: Pulpa Negra.",
+          "🇲🇽:  Bistec de Pulpa Negra.",
+          "🇵🇪: Tapa.",
+          "🇺🇾: Pulpa de Nalga.",
+          "🇻🇪: Pulpa Negra.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Nalga.", "🇧🇷: Coxae Mole Cha.", "🇪🇸: Tapa.", " 🇫🇷:  Tende de Tranche.", "🇺🇸: Topside."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -410,17 +408,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Osobuco.",
-            "🇨🇴: Lagarto de Brazo.",
-            "🇪🇨: Pulpa Blanca.",
-            "🇲🇽: Chambarete.",
-            "🇵🇪: Osobuco Anterior.",
-            "🇺🇾: Brazuelo Deshuesado.",
-            "🇻🇪: Lagarto sin Hueso.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Osobuco.",
+          "🇨🇴: Lagarto de Brazo.",
+          "🇪🇨: Pulpa Blanca.",
+          "🇲🇽: Chambarete.",
+          "🇵🇪: Osobuco Anterior.",
+          "🇺🇾: Brazuelo Deshuesado.",
+          "🇻🇪: Lagarto sin Hueso.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Osobuco.", "🇧🇷: Músculo.", "🇪🇸: Morcillo.", " 🇫🇷: Jarret.", "🇺🇸: Shank."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -436,17 +434,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Posta de Paleta.",
-            "🇨🇴: Bola de Brazo.",
-            "🇪🇨: Pulpa de Brazo.",
-            "🇲🇽: Planchuela.",
-            "🇵🇪: Bistec de cabeza de lomo.",
-            "🇺🇾: Pulpa abajo del asado.",
-            "🇻🇪: Chocozuela.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Posta de Paleta.",
+          "🇨🇴: Bola de Brazo.",
+          "🇪🇨: Pulpa de Brazo.",
+          "🇲🇽: Planchuela.",
+          "🇵🇪: Bistec de cabeza de lomo.",
+          "🇺🇾: Pulpa abajo del asado.",
+          "🇻🇪: Chocozuela.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Marucha.", "🇧🇷: Paleta.", "🇪🇸: Espalda.", " 🇫🇷: Paleron.", "🇺🇸: Shoulderclod."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -462,17 +460,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Pollo Ganso.",
-            "🇨🇴: Muchacho.",
-            "🇪🇨: Salón.",
-            "🇲🇽: Custe.",
-            "🇵🇪: Pejerrey.",
-            "🇺🇾: Pulpa Chorizo.",
-            "🇻🇪: Muchacho Redondo.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Pollo Ganso.",
+          "🇨🇴: Muchacho.",
+          "🇪🇨: Salón.",
+          "🇲🇽: Custe.",
+          "🇵🇪: Pejerrey.",
+          "🇺🇾: Pulpa Chorizo.",
+          "🇻🇪: Muchacho Redondo.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Peceto.", "🇧🇷: Lagarto.", "🇪🇸: Redondel.", " 🇫🇷: Tranche.", "🇺🇸: Tranche."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -493,11 +491,11 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? ["🇨🇱: Tapa Pecho.", "🇨🇴: Pecho.", "🇪🇨: Pecho.", "🇲🇽: Pecho.", "🇵🇪: Pecho.", "🇺🇾: Pecho.", "🇻🇪: Pecho."].map(
-            (str) => <p key={str}>{str} </p>
-          )
+          (str) => <p key={str}>{str} </p>
+        )
         : ["🇦🇷: Pecho.", "🇧🇷: Peito.", "🇪🇸: Pecho.", " 🇫🇷: Poitrine Gros Bout.", "🇺🇸: Brisket."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -509,25 +507,54 @@ export const cowSections = [
     ),
   },
   {
+    sectionId: "Patas",
+    getSectionName: (latamMode) =>
+      latamMode ? (
+        <p> Las patas y pezuñas de vaca se procesan en espuma para extintores de incendios y otros usos.</p>
+      ) : (
+        <p> Cow feet and hooves are processed into  fire extinguisher foam and other uses.</p>
+      ),
+    SvgComponent: (pathProps) => (
+      <g>
+        <path
+          {...pathProps}
+          d="M262.8 194.045c-2.605-.168-5.735-.323-9.356-.5.222.878.428 1.735.438 1.9.312 5.47.21 10.857-.063 16.246.97 1.941 2.91 3.202 4.27 4.852 2.716 3.008 3.298 7.18 4.56 10.965 4.367.097 8.733.291 13.197.097-5.434-6.404-10.286-14.167-10.286-22.803-.06-2.207-1.61-7.113-2.76-10.757zM243.243 172.489c2.216 6.324 4.29 12.789 5.936 19.391l-1.978-.099c-1.6-6.398-3.817-12.69-3.958-19.292z"
+          fill="#fff"
+        />
+        <path
+          {...pathProps}
+          d="M44.169 171.905c-.233.002-.498.003-.797.003-2.69-.004-7.79-.112-11.07-1.015-2.584-.747-5.088-2.882-6.858-4.69-.187.78-.367 1.574-.51 2.376-.687 3.827-1.283 7.854-1.283 10.023 0 8.054-1.262 16.108-2.232 24.162-1.262 4.075-3.688 8.054-3.59 12.518l2.328 13.197c4.755.194 9.413.776 14.168.776-1.941-4.464-4.755-8.636-5.24-13.585.873-.97 1.746-2.038 2.426-3.202 0-3.882-1.941-7.763-.583-11.742.712-2.48 4.297-10.357 8.438-19.102 1.374-2.903 2.973-6.28 4.803-9.719z"
+          fill="#fff"
+        />
+        <path
+          {...pathProps}
+          d="M58 167.055c.066-2.385.479-9.438.734-14.793-2.642 4.163-7.47 11.83-10.24 16.59-3.95 6.79-7.16 16.668-7.16 16.668s4.884 15.262 6.09 18.99c1.165 3.397.195 7.084 1.747 10.286 1.747 2.523 4.464 4.076 5.725 6.89 1.262 2.523 2.038 5.24 3.008 7.86 4.658 0 9.316.194 13.877 0-1.941-3.59-4.367-6.89-6.793-10.092-3.784-4.852-3.396-11.353-5.434-16.981-1.261-4.173-3.59-7.957-4.56-12.227.288-7.86 2.714-15.429 3.006-23.191z"
+          fill="#fff"
+        />
+
+      </g>
+    ),
+  },
+  {
     sectionId: "Tortuguita",
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Lagarto.",
-            "🇨🇴: Lagarto de Pierna.",
-            "🇪🇨: Steak al Minuto .",
-            "🇲🇽: Copeta.",
-            "🇵🇪: Bistec de Pierna.",
-            "🇺🇾: Garrón.",
-            "🇻🇪: Lagarto de Reina.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Lagarto.",
+          "🇨🇴: Lagarto de Pierna.",
+          "🇪🇨: Steak al Minuto .",
+          "🇲🇽: Copeta.",
+          "🇵🇪: Bistec de Pierna.",
+          "🇺🇾: Garrón.",
+          "🇻🇪: Lagarto de Reina.",
+        ].map((str) => <p key={str}>{str} </p>)
         : [
-            "🇦🇷: Tortuguita.",
-            "🇧🇷: Músculo de Primeira.",
-            "🇪🇸: Culata.",
-            " 🇫🇷: Nerveux de Gîte.",
-            "🇺🇸: Leg of Beef.",
-          ].map((str) => <p key={str}>{str} </p>),
+          "🇦🇷: Tortuguita.",
+          "🇧🇷: Músculo de Primeira.",
+          "🇪🇸: Culata.",
+          " 🇫🇷: Nerveux de Gîte.",
+          "🇺🇸: Leg of Beef.",
+        ].map((str) => <p key={str}>{str} </p>),
     SvgComponent: (pathProps) => (
       <g>
         <path
@@ -543,17 +570,17 @@ export const cowSections = [
     getSectionName: (latamMode) =>
       latamMode
         ? [
-            "🇨🇱: Tapa de Barriga.",
-            "🇨🇴: Falda.",
-            "🇪🇨: Falda Vacío.",
-            "🇲🇽: Aldilla.",
-            "🇵🇪: Malaya.",
-            "🇺🇾: Falda.",
-            "🇻🇪: Falda.",
-          ].map((str) => <p key={str}>{str} </p>)
+          "🇨🇱: Tapa de Barriga.",
+          "🇨🇴: Falda.",
+          "🇪🇨: Falda Vacío.",
+          "🇲🇽: Aldilla.",
+          "🇵🇪: Malaya.",
+          "🇺🇾: Falda.",
+          "🇻🇪: Falda.",
+        ].map((str) => <p key={str}>{str} </p>)
         : ["🇦🇷: Vacio.", "🇧🇷: Vazio.", "🇪🇸: Falda.", " 🇫🇷: Bavette.", "🇺🇸: Thin Flank."].map((str) => (
-            <p key={str}>{str} </p>
-          )),
+          <p key={str}>{str} </p>
+        )),
     SvgComponent: (pathProps) => (
       <g>
         <path

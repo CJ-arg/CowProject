@@ -24,7 +24,7 @@ import Cuernos from "./Cuernos";
 // import Nalga from "./Nalga";
 // import Osobuco from "./Osobuco";
 // import Paleta from "./Paleta";
-import Patas from "./Patas";
+// import Patas from "./Patas";
 // import Peceto from "./Peceto";
 // import Pecho from "./Pecho";
 import "./svgImage.css";
@@ -65,7 +65,7 @@ function SvgImage(props) {
             interactive
             TransitionProps={{ timeout: 600 }}
             arrow
-            placement="top-end"
+            placement={Section.sectionId === "Contorno" ? "right" : "left"}
             PopperProps={{
               modifiers: {
                 offset: {
@@ -99,7 +99,7 @@ function SvgImage(props) {
 
       {/* <Garron latamMode={props.latamMode} /> */}
       {/* <Osobuco latamMode={props.latamMode} /> */}
-      <Patas latamMode={props.latamMode} />
+      {/* <Patas latamMode={props.latamMode} /> */}
       <path
         d="M14.042 148.035c1.65 6.114.485 12.712-2.523 18.243-3.007-5.919-.193-12.711 2.523-18.243z"
         fill="#6d7f8b"
