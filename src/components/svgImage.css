@@ -1,8 +1,7 @@
-path{
-   
-    stroke:black;
+path {
+  stroke: rgb(0, 0, 0);
 }
-path:hover{
-    fill:rgb(255, 0, 0);
-    stroke:blue;
+path:hover {
+  fill: rgb(62, 71, 71);
+  stroke: rgb(184, 19, 19);
 }
