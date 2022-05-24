@@ -18,6 +18,6 @@ module.exports = {
     ],
     "react/prop-types": OFF,
     "react/jsx-props-no-spreading": OFF,
-    plugins: ["@typescript-eslint", "prettier"],
+    plugins: [OFF, "prettier"],
   },
 };
