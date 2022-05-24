@@ -512,7 +512,7 @@ export const cowSections = [
       latamMode ? (
         <p> Las patas y pezuñas de vaca se procesan en espuma para extintores de incendios y otros usos.</p>
       ) : (
-        <p> Cow feet and hooves are processed into  fire extinguisher foam and other uses.</p>
+        <p> Cow feet and hooves are processed into fire extinguisher foam and other uses.</p>
       ),
     SvgComponent: (pathProps) => (
       <g>
@@ -531,7 +531,6 @@ export const cowSections = [
           d="M58 167.055c.066-2.385.479-9.438.734-14.793-2.642 4.163-7.47 11.83-10.24 16.59-3.95 6.79-7.16 16.668-7.16 16.668s4.884 15.262 6.09 18.99c1.165 3.397.195 7.084 1.747 10.286 1.747 2.523 4.464 4.076 5.725 6.89 1.262 2.523 2.038 5.24 3.008 7.86 4.658 0 9.316.194 13.877 0-1.941-3.59-4.367-6.89-6.793-10.092-3.784-4.852-3.396-11.353-5.434-16.981-1.261-4.173-3.59-7.957-4.56-12.227.288-7.86 2.714-15.429 3.006-23.191z"
           fill="#fff"
         />
-
       </g>
     ),
   },

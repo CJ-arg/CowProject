@@ -6,7 +6,7 @@ const CustomTooltip = withStyles(() => ({
     background: "#fafffa",
     color: "black",
     fontSize: "1rem",
-    border: "1px  solid #e6e1e1",
+    border: "2px  solid #e6e1e1",
     borderRadius: "0.3rem",
     padding: "1px",
     marginLeft: 0,

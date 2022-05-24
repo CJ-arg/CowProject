@@ -17,7 +17,6 @@ import { cowSections } from "../cow.constants";
 // import Garron from "./Garron";
 // import Cuadril from "./Cuadril";
 // import Contorno from "./Contorno";
-import CowSection from "./CowSection";
 import Cuernos from "./Cuernos";
 // import Lomo from "./Lomo";
 // import Matambre from "./Matambre";
