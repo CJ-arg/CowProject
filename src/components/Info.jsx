@@ -1,12 +1,26 @@
 /* eslint-disable linebreak-style */
-import { Link, Zoom } from "@material-ui/core";
+import { Button, Link, Zoom } from "@material-ui/core";
 // @ts-ignore
 import React from "react";
 import CustomTooltip from "./CustomTooltip";
 
 function Info() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleTooltipClose = () => {
+    setOpen(false);
+  };
+
+  const handleTooltipOpen = () => {
+    setOpen(true);
+  };
   return (
     <CustomTooltip
+      onClose={handleTooltipClose}
+      open={open}
+      disableFocusListener
+      disableHoverListener
+      disableTouchListener
       title={
         <ul>
           Contacto:
@@ -24,9 +38,9 @@ function Info() {
       TransitionComponent={Zoom}
       interactive
       TransitionProps={{ timeout: 600 }}
-      arrow
       placement="top-end"
       PopperProps={{
+        disablePortal: true,
         modifiers: {
           offset: {
             enabled: true,
@@ -36,7 +50,9 @@ function Info() {
       }}
     >
       <div>
-        <h4 className="latamMode"> Info </h4>
+        <h4 className="latamMode" onClick={open ? handleTooltipClose : handleTooltipOpen}>
+          Info
+        </h4>
       </div>
     </CustomTooltip>
   );
