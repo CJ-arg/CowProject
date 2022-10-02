@@ -56,6 +56,9 @@
   margin-left: 10px;
   letter-spacing: 2px;
 }
+ul {
+    list-style: none;
+}
 
 @media screen and (max-width: 1200px) {
   .container {

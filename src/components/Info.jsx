@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import { Button, Link, Zoom } from "@material-ui/core";
+import { Link, Zoom } from "@material-ui/core";
 // @ts-ignore
 import React from "react";
 import CustomTooltip from "./CustomTooltip";
@@ -23,13 +23,18 @@ function Info() {
       disableTouchListener
       title={
         <ul>
-          Contacto:
           <li>
-            <Link href="https://www.linkedin.com/in/carlos-janon-developer/">Linkedin</Link>
+            <Link href="https://www.linkedin.com/in/carlos-janon-developer/" target="_blank">
+              Linkedin
+            </Link>
           </li>
+          <br />
           <li>
-            <Link href="https://github.com/CJ-arg">Github</Link>
+            <Link href="https://github.com/CJ-arg" target="_blank">
+              Github
+            </Link>
           </li>
+          <br />
           <li>
             <Link href="mailto:cowproyectapp@gmail.com">Mail</Link>
           </li>
