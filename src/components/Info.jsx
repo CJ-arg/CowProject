@@ -31,7 +31,7 @@ function Info() {
             <Link href="https://github.com/CJ-arg">Github</Link>
           </li>
           <li>
-            <Link href="mailto:m.bluth@example.com">Mail</Link>
+            <Link href="mailto:cowproyectapp@gmail.com">Mail</Link>
           </li>
         </ul>
       }
