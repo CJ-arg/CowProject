@@ -65,6 +65,7 @@
   .cowTitle {
     padding: 28px;
     font-size: 6.5rem;
+
   }
 }
 @media screen and (max-width: 1000px) {
@@ -90,8 +91,6 @@
   }
   .cowTitle {
     font-size: 2rem;
-    /* margin-bottom: -85px; */
-    /* margin-top: 0; */
   }
   .latamMode {
     font-family: "Righteous", cursive;
