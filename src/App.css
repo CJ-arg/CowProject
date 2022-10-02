@@ -89,9 +89,9 @@
     padding: 5%;
   }
   .cowTitle {
-    font-size: 3rem;
-    margin-bottom: -65px;
-    margin-top: 0;
+    font-size: 2rem;
+    /* margin-bottom: -85px; */
+    /* margin-top: 0; */
   }
   .latamMode {
     font-family: "Righteous", cursive;
