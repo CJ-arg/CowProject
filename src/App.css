@@ -94,16 +94,20 @@
 }
 @media screen and (max-width: 668px) {
   .container {
-    padding: 5%;
+    padding: 2%;
   }
   .cowTitle {
+    margin-top: 10%;
     font-size: 2rem;
+    color: rgba(175, 35, 35, 0.986);
+    -webkit-text-stroke: 0.1px rgb(10, 9, 9);
+  }
+   .cowDiv {
+    margin-top: -30%;
   }
   .latamMode {
     font-family: "Righteous", cursive;
-    color: rgba(175, 35, 35, 0.986);
-    -webkit-text-stroke: 0.1px rgb(10, 9, 9);
-    font-size: 13px;
+    font-size: 1rem;
     margin-top: 0;
   }
 }
