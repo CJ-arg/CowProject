@@ -26,9 +26,7 @@ function Garron({ latamMode }) {
   return (
     <ClickAwayListener onClickAway={handleTooltipClose}>
       <CustomTooltip
-        title={
-          <ul>{latamMode ? garronTextLatam.map((str) => <p>{str} </p>) : garronText.map((str) => <p>{str} </p>)}</ul>
-        }
+        title={<ul>{latamMode ? garronTextLatam.map((str) => <p>{str} </p>) : garronText.map((str) => <p>{str} </p>)}</ul>}
         TransitionComponent={Zoom}
         interactive
         TransitionProps={{ timeout: 600 }}

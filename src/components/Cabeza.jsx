@@ -14,21 +14,11 @@ function Cabeza({ latamMode }) {
     setOpen(true);
   };
   const cabezaText = ["🇦🇷: Sesos.", "🇧🇷: Miolos.", "🇪🇸: Sesos.", " 🇫🇷: Cervelle.", "🇺🇸: Brain."];
-  const cabezaTextLatam = [
-    "🇨🇱: Sesos.",
-    "🇨🇴: Sesos de Res.",
-    "🇪🇨: Sesos.",
-    "🇲🇽: Sesos.",
-    "🇵🇪: Sesos.",
-    "🇺🇾: Sesos.",
-    "🇻🇪: Sesos.",
-  ];
+  const cabezaTextLatam = ["🇨🇱: Sesos.", "🇨🇴: Sesos de Res.", "🇪🇨: Sesos.", "🇲🇽: Sesos.", "🇵🇪: Sesos.", "🇺🇾: Sesos.", "🇻🇪: Sesos."];
   return (
     <ClickAwayListener onClickAway={handleTooltipClose}>
       <CustomTooltip
-        title={
-          <ul>{latamMode ? cabezaTextLatam.map((str) => <p>{str} </p>) : cabezaText.map((str) => <p>{str} </p>)}</ul>
-        }
+        title={<ul>{latamMode ? cabezaTextLatam.map((str) => <p>{str} </p>) : cabezaText.map((str) => <p>{str} </p>)}</ul>}
         TransitionComponent={Zoom}
         interactive
         TransitionProps={{ timeout: 600 }}

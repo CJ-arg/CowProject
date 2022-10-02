@@ -3,7 +3,7 @@ import ClickAwayListener from "@material-ui/core/ClickAwayListener/ClickAwayList
 import { Zoom } from "@material-ui/core";
 import CustomTooltip from "./CustomTooltip";
 
-const Asado = ({ latamMode }) => {
+function Asado({ latamMode }) {
   const [open, setOpen] = useState(false);
 
   const handleTooltipClose = () => {
@@ -14,15 +14,7 @@ const Asado = ({ latamMode }) => {
     setOpen(true);
   };
   const asadoText = ["🇦🇷: Asado.", "🇧🇷: Aba.", "🇪🇸: Falda.", "🇫🇷: Bavette.", "🇺🇸: Rib."];
-  const asadoTextLatam = [
-    "🇨🇱: Asado de Tira.",
-    "🇨🇴: Asado de Tira.",
-    "🇪🇨: Costilla.",
-    "🇲🇽: Costilla.",
-    "🇵🇪: Costilla.",
-    "🇺🇾: Asado.",
-    "🇻🇪:Costillas.",
-  ];
+  const asadoTextLatam = ["🇨🇱: Asado de Tira.", "🇨🇴: Asado de Tira.", "🇪🇨: Costilla.", "🇲🇽: Costilla.", "🇵🇪: Costilla.", "🇺🇾: Asado.", "🇻🇪:Costillas."];
   return (
     <ClickAwayListener onClickAway={handleTooltipClose}>
       <CustomTooltip
@@ -57,6 +49,6 @@ const Asado = ({ latamMode }) => {
       </CustomTooltip>
     </ClickAwayListener>
   );
-};
+}
 
 export default Asado;

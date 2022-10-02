@@ -99,10 +99,7 @@ function SvgImage(props) {
       {/* <Garron latamMode={props.latamMode} /> */}
       {/* <Osobuco latamMode={props.latamMode} /> */}
       {/* <Patas latamMode={props.latamMode} /> */}
-      <path
-        d="M14.042 148.035c1.65 6.114.485 12.712-2.523 18.243-3.007-5.919-.193-12.711 2.523-18.243z"
-        fill="#6d7f8b"
-      />
+      <path d="M14.042 148.035c1.65 6.114.485 12.712-2.523 18.243-3.007-5.919-.193-12.711 2.523-18.243z" fill="#6d7f8b" />
     </svg>
   );
 }

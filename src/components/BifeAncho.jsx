@@ -13,13 +13,7 @@ function BifeAncho({ latamMode }) {
   const handleTooltipOpen = () => {
     setOpen(true);
   };
-  const bifeAnchoText = [
-    "🇦🇷: Bife Ancho.",
-    "🇧🇷: Capa de filé.",
-    "🇪🇸: Lomo ALto.",
-    " 🇫🇷: Côtes, Entrecôtes.",
-    "🇺🇸: Fore Rib.",
-  ];
+  const bifeAnchoText = ["🇦🇷: Bife Ancho.", "🇧🇷: Capa de filé.", "🇪🇸: Lomo ALto.", " 🇫🇷: Côtes, Entrecôtes.", "🇺🇸: Fore Rib."];
   const bifeAnchoTextLatam = [
     "🇨🇱: Lomo Liso.",
     "🇨🇴: Lomo Ancho.",
@@ -32,11 +26,7 @@ function BifeAncho({ latamMode }) {
   return (
     <ClickAwayListener onClickAway={handleTooltipClose}>
       <CustomTooltip
-        title={
-          <ul>
-            {latamMode ? bifeAnchoTextLatam.map((str) => <p>{str} </p>) : bifeAnchoText.map((str) => <p>{str} </p>)}
-          </ul>
-        }
+        title={<ul>{latamMode ? bifeAnchoTextLatam.map((str) => <p>{str} </p>) : bifeAnchoText.map((str) => <p>{str} </p>)}</ul>}
         TransitionComponent={Zoom}
         interactive
         TransitionProps={{ timeout: 600 }}
