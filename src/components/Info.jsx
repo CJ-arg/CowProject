@@ -3,9 +3,11 @@ import React from "react";
 
 function Info() {
   return (
-    <Link href="https://github.com/CJ-arg" color="secondary" underline="none" target="_blank" className="link">
-      Github
-    </Link>
+    <div>
+      <Link href="https://github.com/CJ-arg" color="secondary" underline="none" target="_blank" className="linkMode">
+        Github
+      </Link>
+    </div>
   );
 }
 

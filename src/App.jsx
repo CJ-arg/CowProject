@@ -17,23 +17,23 @@ function App() {
       </div>
       <Grid container spacing={4}>
         <Grid item xs={2} />
-        <Grid item xs={3}>
-          <Info />
-        </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={4}>
           <FormControlLabel
             control={
               <Switch
                 color="default"
-                size="small"
+                size="medium"
                 onChange={(e) => {
                   setLatam(e.target.checked);
                 }}
               />
             }
-            labelPlacement="start"
+            labelPlacement="end"
             label={<p className="latamMode">Latam Focus</p>}
           />
+        </Grid>
+        <Grid item xs={5}>
+          <Info />
         </Grid>
         <Grid item xs={3} />
       </Grid>
