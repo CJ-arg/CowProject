@@ -3,6 +3,20 @@ const OFF = 0;
 module.exports = {
   extends: ["airbnb", "airbnb/hooks", "prettier"],
   plugins: ["prettier"],
+
+  root: true,
+  env: {
+    es6: true,
+    browser: true,
+  },
+  settings: {
+    "import/resolver": {
+      node: {
+        paths: ["."],
+        extensions: [".js", ".jsx"],
+      },
+    },
+  },
   rules: {
     "prettier/prettier": [
       "error",
